@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giriş Yap</title>
+</head>
+<body>
+<form>
+  <label for="username">Kullanici Adi:</label>
+  <input type="text" id="username">
+
+  <label for="password">Sifre:</label>
+  <input type="password" id="password">
+
+  <input type="button" value="Giris Yap" onclick="login()">
+</form>
+
+<script>
+  function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    var validUsername = "admin";
+    var validPassword = "5464";
+
+    if (username === validUsername && password === validPassword) {
+      window.location.href = "input.html";
+    } else {
+      alert("Hatali kullanici adi veya sifre!");
+    }
+  }
+</script>
+
+<label>info:</label> <br/>
+<label2>username:admin <br/>password:5464</label2>
+</body>
+</html>

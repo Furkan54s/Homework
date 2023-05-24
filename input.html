@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ogrenci Kaydi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Ogrenci Kaydi</h1>
+
+<form action="layout.php" method="POST">
+    <label for="full_name">Ad ve Soyad:</label>
+    <input type="text" id="full_name" name="full_name" required>
+
+    <label for="email">E-posta Adresi:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Cinsiyet:</label>
+    <label for="male">
+        <input type="radio" id="male" name="gender" value="Male" required> Erkek
+    </label>
+    <label for="female">
+        <input type="radio" id="female" name="gender" value="Female" required> Kadin
+    </label>
+
+    <input type="submit" value="Kaydet">
+</form>
+</body>
+</html>
